@@ -1,0 +1,11 @@
+node_modules
+.vscode
+.browserslistrc
+.editorconfig
+.gitattributes
+.npmrc
+.stylelintignore
+.stylelintrc.json
+package-lock.json
+package.json
+.DS_Store

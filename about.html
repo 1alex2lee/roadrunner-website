@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/starter.css">
+        <title>Rd Runnr</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+        <script> 
+            $(function(){
+              $("#footer").load("footer.html"); 
+            });
+        </script> 
+    </head>
+    
+    <body class="min-vh-100 min-vw-100">
+
+        <!-- <header>
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+                <img src="assets/index/logo.png" width="40" class="d-inline-block mr-2"></img>
+            </a>
+        </header> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">
+                <img src="assets/index/logo.png" width="40"></img>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link active" href="about.html">About<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Blog</a>
+                    <a class="nav-item nav-link" href="#">App</a>
+                    <a class="nav-item nav-link" href="#">Shop</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid" style="animation: drop_in; animation-duration: 2s;">
+            <div class="row justify-content-md-center my-5">
+                <div class="col-sm-4">
+                    <h1 class="display-1">Rd_<br>Runnr</h1>
+                    <p>(road runner)</p>
+                </div>
+                <div class="col-sm-5 align-self-center">
+                    <p>Rd_Runnr was founded in 2022 by a group of driving enthusiasts who wanted more to the road driving experience. It aims to bring together like-minded people.</p>
+                </div>
+            </div>
+
+            <div class="container-fluid" style="background-color: #1C3738;">
+                <div class="row my-5">
+                    <div class="col-sm align-self-center text-center my-4">
+                        <h1 class="text-white">Founders</h1>
+                    </div>
+                    <div class="col-sm text-center">
+                        <img class="rounded mt-4" src="assets/about/founders/portrait-placeholder.png" width="200"></img>
+                        <p class="text-white">Alex Lee</p>
+                    </div>
+                    <div class="col-sm text-center">
+                        <img class="rounded mt-4" src="assets/about/founders/portrait-placeholder.png" width="200"></img>
+                        <p class="text-white">Sean Wisskirchen</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-sm align-self-center text-center">
+                        <h1>Current Fleet</h1>
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm text-center">
+                        <img class="rounded my-4 order-2" src="assets/about/fleet/car-template.png" width="300"></img>
+                        <p>Audi RS4 B9.5<br>2.9 L biturbo V6<br>331 kW / 600 Nm</p>
+                    </div>
+                    <div class="col-sm text-center">
+                        <img class="rounded my-4 order-2" src="assets/about/fleet/car-template.png" width="300"></img>
+                        <p>Mercedes-AMG EQS 53 4MATIC+<br>Dual motor<br>484 kW / 950 Nm</p>
+                    </div>
+                    <div class="col-sm text-center">
+                        <img class="rounded my-4 order-2" src="assets/about/fleet/car-template.png" width="300"></img>
+                        <p>Mercedes-AMG A45 S 4MATIC+<br>2.0 L turbo I4<br>310 kW / 500 Nm</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid" style="background-color: #F4FFF8;">
+                <div class="row  my-5">
+                    <div class="col-sm align-self-center text-center mt-3">
+                        <h1 class="text-dark">Join Us</h1>
+                    </div>
+                    <div class="col-sm align-self-center m-4">
+                        <div class="row text-center me-2">
+                            <div class="col-sm my-2">
+                                <input class="form-control" type="text" id="input_name" aria-describedby="nameHelp" placeholder="Name">
+                            </div>
+                            <div class="col-sm"></div>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-sm align-self-center">
+                                <input class="form-control" type="text" id="input_email" aria-describedby="nameHelp" placeholder="Email">
+                            </div>
+                            <div class="col my-2 align-self-center">
+                                <button type="button" class="btn btn-primary" onclick="submit_email()">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer id="footer"></footer>
+            
+        </div>
+            
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script type="module" src="assets/js/starter.js"></script>
+        <script src="assets/js/index.js"></script>
+
+    </body>
+
+</html>
