@@ -6,6 +6,4 @@ node_modules
 .npmrc
 .stylelintignore
 .stylelintrc.json
-package-lock.json
-package.json
 .DS_Store
