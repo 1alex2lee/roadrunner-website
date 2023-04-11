@@ -9,7 +9,6 @@
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
 
-
 //
 // Bring in Bootstrap
 //
@@ -29,25 +28,31 @@ $enable-gradients: true;
 $enable-shadows: true;
 
 // Customize some defaults
-$body-color: #333;
-$body-bg: #fff;
-$border-radius: .4rem;
+$body-color: #000f08;
+$background-color: #8baaad;
+$body-bg: #8baaad;
+$border-radius: 0.4rem;
 $success: #7952b3;
+$primary: #f4fff8;
 
-@import "bootstrap/scss/functions"; // Required
-@import "bootstrap/scss/variables"; // Required
-@import "bootstrap/scss/mixins"; // Required
+@import "bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url("https://use.fontawesome.com/releases/v5.15.1/css/all.css");
 
-@import "bootstrap/scss/root"; // Required
-@import "bootstrap/scss/reboot"; // Required
-@import "bootstrap/scss/type";
+// @import "bootstrap/scss/functions"; // Required
+// @import "bootstrap/scss/variables"; // Required
+// @import "bootstrap/scss/mixins"; // Required
+
+// @import "bootstrap/scss/root"; // Required
+// @import "bootstrap/scss/reboot"; // Required
+// @import "bootstrap/scss/type";
 // @import "bootstrap/scss/images";
 // @import "bootstrap/scss/code";
-@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
 // @import "bootstrap/scss/forms";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/buttons";
+// @import "bootstrap/scss/transitions";
 // @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/input-group"; // Requires forms
@@ -63,16 +68,15 @@ $success: #7952b3;
 // @import "bootstrap/scss/progress";
 // @import "bootstrap/scss/media";
 // @import "bootstrap/scss/list-group";
-@import "bootstrap/scss/close";
+// @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
 // @import "bootstrap/scss/spinners";
-@import "bootstrap/scss/utilities";
+// @import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/print";
-
 
 //
 // Custom styles
@@ -81,10 +85,60 @@ $success: #7952b3;
 @import "icon-list";
 
 body {
-  padding: 3rem 1.5rem;
+	padding: 3rem 1.5rem;
+	padding-top: 3rem 1.5rem;
+	padding-bottom: 3rem 1.5rem;
+}
+
+nav {
+	padding: 3rem 1.5rem;
 }
 
 // Style Bootstrap icons
 .bi {
-  fill: currentcolor;
+	fill: currentcolor;
+}
+
+.display-1 {
+	color: #1c3738;
+}
+
+h3 {
+	color: #1c3738;
+}
+
+h6 {
+	color: #1c3738;
+}
+
+p {
+	color: #1c3738;
+}
+
+.text-white {
+	color: #f4fff8;
+}
+
+.text-dark {
+	color: #1c3738;
+}
+
+.lead {
+	color: #1c3738;
+}
+
+.alert {
+	color: #ff2a00;
+}
+
+@keyframes drop_in {
+	from {
+		transform: translateY(-40px);
+		opacity: 0%;
+	}
+
+	to {
+		transform: translateY(0px);
+		opacity: 100%;
+	}
 }
