@@ -1,25 +1,29 @@
-const express = require("express");
-const path = require("path");
+
+// const express = require("express");
+import express from "express";
+
+// const bodyParser = require("body-parser");
+import bodyParser from "body-parser";
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
-// Setting path for public directory
-const static_path = path.join(__dirname, "public");
-app.use(express.static(static_path));
-app.use(express.urlencoded({ extended: true }));
+app.use("/", express.static("static"));
+app.use("/node_modules", express.static("node_modules"));
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  })
+);
 
-// Handling request
-app.post("/request", (req, res) => {
-	res.json([
-		{
-			name_recieved: req.body.name,
-			designation_recieved: req.body.designation,
-		},
-	]);
+app.post("/signup", bodyParser.json(), function (req, res) {
+    console.log("sign up request made");
+    // console.log(req.body);
+    var name = req.body.name
+    var email = req.body.email
+    res.send("server received "+ name +" and "+ email);
 });
 
-// Server Setup
 app.listen(port, () => {
-	console.log(`server is running at ${port}`);
+    console.log(`RoadRunner server listening on port ${port}`);
 });
